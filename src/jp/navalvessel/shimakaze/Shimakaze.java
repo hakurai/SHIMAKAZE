@@ -6,7 +6,6 @@ package jp.navalvessel.shimakaze;
 
 import java.io.File;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -14,10 +13,10 @@ import javafx.stage.Stage;
 /**
  * @author eguchi
  */
-public class Startup extends Application {
+public class Shimakaze extends Application {
 
     public static void main(String[] args) {
-        Application.launch(Startup.class, args);
+        Application.launch(Shimakaze.class, args);
     }
 
     @Override
@@ -27,13 +26,19 @@ public class Startup extends Application {
             final TwitterAuthController authController = new TwitterAuthController();
             authController.authlization();
         } else {
-            Parent root = FXMLLoader.load(getClass().getResource("Sample.fxml"));
+            Parent root = MainFrameController.createView();
 
             stage.setScene(new Scene(root));
+            stage.setTitle("SHIMAKAZE");
             stage.show();
         }
 
+    }
+    
 
-
+    @Override
+    public void stop() throws Exception {
+        super.stop();
+        System.exit(0);
     }
 }

@@ -4,6 +4,8 @@
  */
 package jp.navalvessel.shimakaze;
 
+import jp.navalvessel.shimakaze.core.TwitterServiceAgent;
+import jp.navalvessel.shimakaze.core.TwitterAuthAgent;
 import java.io.IOException;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -65,7 +67,7 @@ public class TwitterAuthController {
 
                             stage.hide();
 
-                            Parent root = FXMLLoader.load(getClass().getResource("Sample.fxml"));
+                            Parent root = MainFrameController.createView();
 
                             stage.setScene(new Scene(root));
                             stage.show();

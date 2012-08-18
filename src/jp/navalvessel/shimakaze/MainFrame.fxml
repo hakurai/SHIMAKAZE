@@ -5,7 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml" fx:controller="jp.navalvessel.shimakaze.Sample">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml" fx:controller="jp.navalvessel.shimakaze.MainFrameController">
   <children>
     <TextArea id="textArea1" fx:id="inputTweetArea" prefHeight="28.0" prefWidth="263.0" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="0.0" />
     <Button id="button1" fx:id="tweetButton" onAction="#handleTweetAction" prefHeight="28.0" prefWidth="57.0" text="tweet" AnchorPane.rightAnchor="0.0" />

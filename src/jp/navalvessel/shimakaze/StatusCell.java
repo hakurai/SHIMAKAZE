@@ -4,6 +4,7 @@
  */
 package jp.navalvessel.shimakaze;
 
+import jp.navalvessel.shimakaze.core.ProfileImageRepository;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.control.LabelBuilder;

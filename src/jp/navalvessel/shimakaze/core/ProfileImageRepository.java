@@ -1,4 +1,4 @@
-package jp.navalvessel.shimakaze;
+package jp.navalvessel.shimakaze.core;
 
 import javafx.scene.image.Image;
 
